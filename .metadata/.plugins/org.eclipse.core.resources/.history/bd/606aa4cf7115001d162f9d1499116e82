@@ -1,0 +1,17 @@
+package chapter7;
+
+public class Shopping {
+	
+	public Shopping() {
+		choice();
+	}
+	
+	public void choice() {
+		System.out.println("1. 구매 2. 총 비용 3. 보유포인트");
+		
+		
+		
+		
+	}
+	
+}

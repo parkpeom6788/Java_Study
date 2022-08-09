@@ -1,0 +1,19 @@
+package bookshelf;
+
+public class BookShelf extends Shelf implements Queue {
+
+	@Override
+	public void enQueue(String title) {
+		
+	}
+
+	@Override
+	public String deQueue() {
+		return null;
+	}
+
+	@Override
+	public int getSize() {
+		return 0;
+	}
+}

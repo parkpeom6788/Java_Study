@@ -1,0 +1,47 @@
+package generics;
+abstract class Material2 {
+	public abstract void doPrinting();
+}
+class Plastic2 extends Material2 {
+	@Override
+	public String toString() {
+		return "재료는 Plastic2 입니다.";
+	}
+	@Override
+	public void doPrinting() {
+		System.out.println("Plasting2 재료로 출력합니다.");
+	}
+}
+class Powder2 extends Material2 {
+	@Override
+	public void doPrinting() {
+		System.out.println("파우더 재료 입니다.");
+	}
+	public String toString() {
+		return "파우더 재료로 만들어집니다";
+	}
+}
+public class TreeDPrinter2<T extends Material2> {
+		
+	private T material;
+	public T  getMaterial() {
+		return material;
+	}
+	public void setMaterial(T material) {
+		this.material = material;
+	}
+	public static void main(String[] args) {
+		TreeDPrinter2<Plastic2> plastic = new TreeDPrinter2<Plastic2>();
+	    plastic.setMaterial(new Plastic2());
+	    Plastic2 plastic2 = plastic.getMaterial();
+	    System.out.println(plastic2);
+	    plastic2.doPrinting();
+	    System.out.println("******************************");
+	    TreeDPrinter2<Powder2> powder = new TreeDPrinter2<Powder2>();
+	    powder.setMaterial(new Powder2());
+	    Powder2 powder2 = powder.getMaterial();
+	    System.out.println(powder2);
+	    powder2.doPrinting();
+	}
+}
+

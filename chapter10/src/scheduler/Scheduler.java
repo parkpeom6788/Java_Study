@@ -1,0 +1,12 @@
+package scheduler;
+
+/* 왜 인터페이스를 사용하는가 ?
+ * UserInfoWeb은 IUserInfoDao 에 정의된 메서드 명세만 보고
+ * DAO를 사용할수 있고 DAO 클래스들은 IUserInfoDAO 에 정의된 
+ * 메서드를 구현할 책임이 있다
+ */
+public interface Scheduler {
+	void getNextCall();
+	void sendCallToAgent(); // 상담원에게 콜 던짐
+	
+}

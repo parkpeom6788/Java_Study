@@ -1,0 +1,7 @@
+package 두개매개변수;
+
+public class Point <T,V> {
+
+	
+	
+}

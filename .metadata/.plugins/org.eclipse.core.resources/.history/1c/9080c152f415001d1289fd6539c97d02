@@ -1,0 +1,11 @@
+package sec01_exam;
+
+public class SenderEx {
+	
+	public static void main(String[] args) {
+		// 추상클래스는 인스턴스를 생성하지 못한다.
+		// ContentSender contentSender = new ContentSender();
+		// 예외 발생 이유 ? 
+		
+	}
+}

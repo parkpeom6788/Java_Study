@@ -1,0 +1,16 @@
+package sec03_exam;
+
+public class KStudent  extends Student{
+
+	public KStudent(String name,int age) {
+		
+	}
+	
+	
+	@Override
+	public void printSchool() {
+		
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+package shopping;
+
+public class Tv extends Product {
+	Tv(int price,String name,int bonusPoint) {
+		super(price,name,bonusPoint);
+	}
+}

@@ -1,0 +1,12 @@
+package sec02_exam;
+
+public abstract class Unit {
+	//필드
+	int x;
+	int y;
+	String str;
+	
+	// 추상메서드 선언(구현부 없다)
+	
+	
+}

@@ -1,0 +1,12 @@
+package sec02_exam;
+
+class Car {}
+class FireEngine extends Car{}
+class Ambulance extends Car{}
+
+public class InstanceOfEx1 {
+	
+	public static void main(String[] args) {
+		
+	}
+}

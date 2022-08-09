@@ -1,0 +1,6 @@
+package sec02_exam;
+
+public class InstanceOfEx1 {}
+class FireEngine extends InstanceOfEx1{}
+class Ambulance extends InstanceOfEx1{}
+

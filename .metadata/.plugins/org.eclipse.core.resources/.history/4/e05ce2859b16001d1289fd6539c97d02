@@ -1,0 +1,9 @@
+package final키워드;
+
+/*final 클래스 : final 키워드가 클래스 이름 앞에 있으면 상속될수 없음
+ * final 메서드 : final 키워드가 메서드 이름 앞에 있으면 오버라이딩 할 수 없음
+ * final 변수 : final 변수를 선언하면 상수로 만들고 변경할 수 없음
+ */
+public class Final_Exam {
+	
+}

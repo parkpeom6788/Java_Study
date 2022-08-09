@@ -1,0 +1,9 @@
+package generics;
+
+public class Powder {
+	
+	@Override
+	public String toString() {
+		return super.toString();
+	}
+}

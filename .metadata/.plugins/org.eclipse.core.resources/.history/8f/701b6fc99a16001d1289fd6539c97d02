@@ -1,0 +1,16 @@
+package sec03_exam;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Student student = new SStudent("홍길동", 21);
+		Student student2 = new KStudent("손오공",25);
+		
+		student.printInfo();
+		student2.printInfo();
+		
+		student.printSchool();
+		student.printSchool();
+	}
+}

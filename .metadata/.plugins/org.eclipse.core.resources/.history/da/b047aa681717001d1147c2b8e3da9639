@@ -1,0 +1,31 @@
+package interfaceex;
+
+/*
+ * 인터페이스는 Client Code 와 서비스를 제공하는 객체 사이의 약속
+ * 어떤 객체가 어떤 interface 타입이라 함은 그 interface가 제공하는
+ * 메서드를 구현했다는 것임
+ * Client 는 어떻게 구현되었는지 상관없이 interface의 정의만을 보고 사용할수 있음
+ * ex JDBC
+ * 다양한 구현이 필요한 인터페이스를 설계하는 일은 매우 중요한 일임 
+ * 
+ */
+
+
+public class CalculatorTest {
+	
+	// main 에서 가져다가 쓰는 코드를 클라이언트 코드 라고 한다 
+	
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 2;
+		Calc calc = new CompleteCalc(); // 인터페이스 = 구현클래스()
+//		Calc calc1 = new Calc(); 인터페이스 new x
+//		Calc calc2 = new Calculator();  추상클래스 new x 
+		calc.divide(10, 20);
+		
+		Calculator calc2 = new CompleteCalc(); // 업캐스팅 가능 
+		System.out.println(calc.add(num1, num2)); // 12
+		// 원래의 메서드를 호출하고 싶으면 다운 캐스팅 
+		
+	}
+}

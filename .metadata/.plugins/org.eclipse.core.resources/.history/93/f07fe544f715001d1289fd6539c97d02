@@ -1,0 +1,13 @@
+package sec02_exam;
+
+public class UnitEx {
+	public static void main(String[] args) {
+		//Unit unit = new Unit(); // 예외 발생 이유?
+		System.out.println("----------------------------------------");
+		Tank tank = new Tank();
+		tank.move(100, 300);
+		tank.sizeMode();
+		tank.stop("탱크", 300, 400);
+		
+	}
+}

@@ -1,0 +1,8 @@
+package sec07_exam;
+
+public class SingletonEx {
+	public static void main(String[] args) {
+		
+		// Singleton 클래스의 기본생성자를 
+	}
+}

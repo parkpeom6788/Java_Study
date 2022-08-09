@@ -1,0 +1,22 @@
+package bookshelf;
+
+
+// BookShelf 에서-> 부모에서 구현한 
+// 메서드만 호출함 
+public class BookShelf extends Shelf implements Queue {
+
+	@Override
+	public void enQueue(String title) {
+		shelf.add(title);
+	}
+
+	@Override
+	public String deQueue() {
+		return shelf.remove(0);
+	}
+
+	@Override
+	public int getSize() {
+		return getCount();
+	}
+}

@@ -1,0 +1,17 @@
+package interfaceex;
+
+public class CalculatorTest {
+	
+	// main 에서 가져다가 쓰는 코드를 클라이언트 코드 라고 한다 
+	public static void main(String[] args) {
+		int num1 = 10;
+		int num2 = 2;
+		Calc calc = new CompleteCalc(); // 인터페이스 = 구현클래스()
+//		Calc calc1 = new Calc(); 인터페이스 new x
+//		Calc calc2 = new Calculator();  추상클래스 new x 
+		Calculator calc2 = new CompleteCalc(); // 업캐스팅 가능 
+		System.out.println(calc.add(num1, num2)); // 12
+		// 원래의 메서드를 호출하고 싶으면 다운 캐스팅 
+		
+	}
+}

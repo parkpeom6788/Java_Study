@@ -1,0 +1,15 @@
+package final키워드;
+
+public class Calculator {
+	
+	static final double PI = 3.14;
+	int left , right;
+	
+	public void setOprands(int left , int right) {
+		this.left = left;
+		this.right = right;
+	}
+	
+	
+	
+}

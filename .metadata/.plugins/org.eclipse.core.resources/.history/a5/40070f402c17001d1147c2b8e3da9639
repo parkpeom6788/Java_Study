@@ -1,0 +1,8 @@
+package generics;
+
+public class TreeDPrinter {
+	
+	private Object meterial; // Object 로 모든클래스의 최상의 클래스
+	
+	
+}

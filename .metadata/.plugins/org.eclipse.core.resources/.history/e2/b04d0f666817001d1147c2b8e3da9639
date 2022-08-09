@@ -1,0 +1,31 @@
+package generics;
+
+class Material2 {
+	
+}
+class Plastic2 extends Material2 {
+	
+	@Override
+	public String toString() {
+		return "재료는 Plastic2 입니다.";
+	}
+}
+public class TreeDPrinter2<T extends Material2> {
+		
+	private T material;
+	public T  getMaterial() {
+		return material;
+	}
+	public void setMaterial(T material) {
+		this.material = material;
+	}
+	public static void main(String[] args) {
+		
+		TreeDPrinter2<Plastic2> tree = new TreeDPrinter2<Plastic2>();
+	    tree.setMaterial(new Plastic2());
+	    Plastic2 plastic2 = tree.getMaterial();
+	    System.out.println( tree);
+	    
+	}
+}
+

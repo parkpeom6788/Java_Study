@@ -1,0 +1,15 @@
+package Phone;
+
+public class Galaxy implements Phone {
+
+	@Override
+	public String getMenufacturer() {
+		return "";
+	}
+
+	@Override
+	public String getOS() {
+		return "";
+	}
+	
+}

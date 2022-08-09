@@ -1,0 +1,31 @@
+package sec02_exam;
+
+class Car {}
+class FireEngine extends Car{}
+class Ambulance extends Car{}
+
+public class InstanceOfEx1 {
+	
+	public static void main(String[] args) {
+		
+		FireEngine fe = new FireEngine();
+		FireEngine fe2 = null;
+		
+		Object obj = fe; // 업캐스팅
+		Car car = fe; // 업캐스팅
+		
+		//instanceof 연산자의 결과가 참이면 형변환이 가능하다
+		if(fe instanceof FireEngine) {
+			System.out.println("This is a FireEngine instance");
+		}
+		if(fe instanceof Car) {
+			System.out.println("This is a Car instance");
+		}
+		if(fe instanceof Object) {
+			System.out.println("this is a Object instance");
+		}
+		if(fe instanceof Ambulance) {
+			System.out.println("This is a Ambulance instance");
+		}
+	}
+}

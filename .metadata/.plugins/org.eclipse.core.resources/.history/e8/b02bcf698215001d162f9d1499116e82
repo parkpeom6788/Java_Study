@@ -1,0 +1,7 @@
+package shopping;
+
+public class Computer extends Product {
+	Computer(int price,String name,int bonusPoint) {
+		super(price,name,bonusPoint);
+	}
+}

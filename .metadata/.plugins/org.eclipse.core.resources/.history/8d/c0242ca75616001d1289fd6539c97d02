@@ -1,0 +1,14 @@
+package Phone;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Phone galaxy = new Galaxy();
+		Phone iphone = new IPhone();
+		System.out.println(galaxy.getMenufacturer());
+		System.out.println(galaxy.getOS());
+		System.out.println(iphone.getMenufacturer());
+		System.out.println(iphone.getOS());
+	}
+}

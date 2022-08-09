@@ -1,0 +1,5 @@
+package sec02_exam;
+
+public abstract class Unit {
+
+}

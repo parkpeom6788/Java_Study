@@ -1,0 +1,17 @@
+package final키워드;
+
+/*final 클래스 : final 키워드가 클래스 이름 앞에 있으면 상속될수 없음
+ * final 메서드 : final 키워드가 메서드 이름 앞에 있으면 오버라이딩 할 수 없음
+ * final 변수 : final 변수를 선언하면 상수로 만들고 변경할 수 없음
+ * 
+ * Object 클래스
+ * java.lang은 자바 프로그램에서 가장 많이 사용되는 패키지로 자바프로그램 내에서 
+ * import 를 하지 않아도 자동으로 포함
+ * 이 패키지 안에 들어 있는 java.lang.Object 클래스는 자바 API의 모든 클래스와
+ * 사용자가 정의한 모든 클래스의 최상위 클래스 이다
+ * java.lang.Object 는 자동으로 상속받게 되어 Object 클래스에 있는 모든 메서드와 변수를 사용 할수 있다
+ * 
+ */
+public class Final_Exam {
+	
+}

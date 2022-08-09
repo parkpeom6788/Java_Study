@@ -1,0 +1,15 @@
+package sec01_exam;
+
+public class letterSender extends  ContentSender {
+	
+	String content;
+	
+	public letterSender(String title,String nm,String content) {
+		super(title,nm);
+		this.content = content;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,6 @@
+package sec02_exam;
+
+public class Car {}
+class FireEngine extends Car{}
+class Ambulance extends Car{}
+

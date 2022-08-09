@@ -1,0 +1,9 @@
+package sec01_exam;
+
+public class CastingEx2 {
+	
+	public static void main(String[] args) {
+		
+		Car car = new Ambulance();
+	}
+}

@@ -1,0 +1,8 @@
+package sec02_exam;
+
+public interface InterfaceEx {
+	
+	public static void main(String[] args) {
+		
+	}
+}

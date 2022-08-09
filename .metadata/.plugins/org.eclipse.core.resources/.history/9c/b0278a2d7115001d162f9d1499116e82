@@ -1,0 +1,61 @@
+package chapter7;
+
+public class Example1_Buyer {
+	public static void main(String[] args) {
+		class Product {
+			String name = "";
+			int price;
+			int bonusPoint;
+			public Product(String name, int price, int bonusPoint) {
+				super();
+				this.name = name;
+				this.price = price;
+				this.bonusPoint = bonusPoint;
+			}		
+		}
+		class Tv extends Product {
+			Tv() {
+				this("jmTV",500,50);
+			}
+			public Tv(String name, int price, int bonusPoint) {
+				super(name, price, bonusPoint);
+			}
+		}
+		class Computer extends Product {
+			Computer() {
+				this("SmCom",600,66);
+			}
+			Computer(String name,int price,int bonusPoint) {
+				super(name,price,bonusPoint);
+			}
+		}
+		class Buyer {
+			int money = 1000;
+			int bonusPoint = 0;
+			Product[] cart = new Product[10]; // 장바구니 cart 배열 생성
+			
+			int i = 0;
+			void buy(Product p) {
+				money -= p.price;
+				bonusPoint += p.bonusPoint;
+				cart[i++] = p;
+			}
+		}
+		
+		Buyer b = new Buyer(); 
+		System.out.println(b.money); // 소유금액
+		
+		Tv tv = new Tv();
+		Computer com = new Computer();
+		
+		b.buy(tv); // buy메소드에서 tv구매
+		System.out.println("소지금 : " + b.money);
+		System.out.println("보유 보너스 : " + b.bonusPoint);
+		
+		b.buy(com);
+		System.out.println("소지금 : " + b.money);
+		System.out.println("소유 보너스 : " + b.bonusPoint);
+		
+		
+	}
+}

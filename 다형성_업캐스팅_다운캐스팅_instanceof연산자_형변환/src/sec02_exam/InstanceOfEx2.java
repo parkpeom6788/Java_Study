@@ -1,0 +1,32 @@
+package sec02_exam;
+
+class Parent {
+	
+}
+class Child extends Parent {
+	
+}
+public class InstanceOfEx2  {
+	public static void main(String[] args) {
+		Parent parentA = new Child();
+		method(parentA);
+		method(new Child());
+		Parent parentB = new Parent();
+		method(parentB);
+		method(new Child());
+	}
+	public static void method(Parent parent) {
+		if(parent instanceof Child) { 
+			//우측이 조상이 와야됨
+			// 서로 상속 관계에 있어서 instanceof 연산자의 결과가 true이므로
+			// 강제캐스팅이 가능
+			Child child = (Child)parent;
+			System.out.println("child로 변환 성공");
+		}
+		else {
+			System.out.println("child로 변환 실패");
+		}
+	}
+	
+	
+}

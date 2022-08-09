@@ -1,0 +1,10 @@
+package 두개매개변수;
+
+public class GenericMethod {
+	
+	public static <T,V> double makeRectangle(Point<T,V> p1 , Point<T,V> p2) {
+		
+		((Number)p1.getX())
+		
+	}
+}

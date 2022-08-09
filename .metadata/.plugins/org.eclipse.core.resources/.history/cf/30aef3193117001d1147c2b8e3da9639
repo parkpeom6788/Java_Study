@@ -1,0 +1,18 @@
+package generics;
+
+public class TreeDPrinter<T> {
+	
+	private T material; // Object 로 모든클래스의 최상의 클래스
+					// 어떤타입이 들어오든 Object로 변환되어 사용
+	public T getMaterial() {
+		return material;
+	}
+	public void setMaterial(T material) {
+		this.material = material;
+	}
+	
+	@Override
+	public String toString() {
+		return material.toString();
+	}
+}

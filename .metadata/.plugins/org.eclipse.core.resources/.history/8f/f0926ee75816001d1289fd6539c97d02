@@ -1,0 +1,31 @@
+package Phone;
+
+// 특정 기능을 개발하는데 있어 공통적인 
+// 기능을 명시하고 강제적으로 구현하게끔 하는 역할
+public interface Phone {
+	// 접근제어자로 public 또는 default가 명시될 수 있습니다.
+	int version = 12; // 상수 
+	String getMenufacturer();
+	String getOS();
+	default void printRing() { // default 키워드는 무조건 명시
+		System.out.println("Sound : Ring Ring~~");
+	}
+	static void printUser(String user) {
+		getUser(user);
+	}
+	
+	static void printUser(String user) {
+		// static private 이용 
+		System.out.println("User : " + user);
+	}
+}
+
+interface Watch {
+	String getAppearance();
+}
+
+// Phone과 Watch 인터페이스를 상속받은 Device 인터페이스를 생성하였습니다.
+interface Device extends Phone , Watch {
+	
+}
+

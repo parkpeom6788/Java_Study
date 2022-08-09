@@ -1,0 +1,19 @@
+
+public class Example {
+	public static void main(String[] args) {
+		A a = new Person(); // 인터페이스 a = new 구현한클래스()
+		Person person = new Person();
+		
+		Person person2 = (Person)a; // 다운캐스팅 
+		person2.method();
+		person2.method1();
+		System.out.println();
+		
+		a.method();
+		person.method();
+		person.method1();
+		
+		A a1 = new Member();  // 인터페이스 필드의 다형성  
+		
+	}
+}

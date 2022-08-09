@@ -1,0 +1,21 @@
+package sec02_exam;
+
+class Parent {
+	
+}
+class Child extends Parent {
+	
+}
+
+public class InstanceOfEx2  {
+	public static void main(String[] args) {
+		Parent parentA = new Child();
+		
+		method(parentA);
+		method(new Child());
+		
+		Parent parentB = new Parent();
+		
+		
+	}
+}

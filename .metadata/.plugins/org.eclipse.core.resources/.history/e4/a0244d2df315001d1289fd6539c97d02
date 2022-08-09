@@ -1,0 +1,12 @@
+package sec01_exam;
+
+/*추상클래스란?
+ * 추상메서드를 1개이상 가지고 있는 클래스
+ * 추상메서드는 선언부만 있고 구현부가 없는 클래스
+ * 완성된 설계도가 
+ * 
+ */
+
+public abstract class ContentSender {
+	
+}

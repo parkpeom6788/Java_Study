@@ -1,0 +1,26 @@
+package eud.sample;
+
+public class LGWashingMachine implements WashingMachine {
+
+	@Override
+	public void startButtonPressed() {
+		
+	}
+
+	@Override
+	public void pauseButtonPressed() {
+		
+	}
+
+	@Override
+	public void stopButtonPressed() {
+		
+	}
+
+	@Override
+	public int changeSpeed(int speed) {
+
+		return 0;
+	}
+	
+}

@@ -1,0 +1,10 @@
+package 두개매개변수;
+
+public class GenericTest {
+	
+	public static void main(String[] args) {
+		
+		Point<Integer,Double> p1 = new Point<Integer,Double>(0,0.0);
+		
+	}
+}

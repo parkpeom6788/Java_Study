@@ -1,0 +1,6 @@
+package sec02_exam;
+
+public class DropShip extends Unit{
+	
+	
+}

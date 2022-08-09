@@ -1,0 +1,13 @@
+package sec01_exam;
+
+import 다형성_업캐스팅_다운캐스팅_instanceof연산자_형변환.Ambulance;
+import 다형성_업캐스팅_다운캐스팅_instanceof연산자_형변환.Car;
+
+public class CastingEx2 {
+	
+	public static void main(String[] args) {
+		Car car = new Ambulance();
+		
+	
+	}
+}

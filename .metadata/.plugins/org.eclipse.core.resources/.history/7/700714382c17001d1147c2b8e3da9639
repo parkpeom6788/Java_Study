@@ -1,0 +1,8 @@
+package generics;
+
+public class TreeDPrinter {
+	
+	private Object meterial;
+	
+	
+}

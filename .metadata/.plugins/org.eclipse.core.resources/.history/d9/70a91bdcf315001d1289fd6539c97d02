@@ -1,0 +1,9 @@
+package sec01_exam;
+
+public class KakaoSender extends ContentSender {
+	String content;
+	
+	
+	
+	
+}

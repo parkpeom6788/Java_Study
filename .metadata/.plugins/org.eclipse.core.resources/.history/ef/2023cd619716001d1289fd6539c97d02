@@ -1,0 +1,7 @@
+package sec03_exam;
+
+public abstract class Student {
+	public String name;
+	public int age;
+	
+}

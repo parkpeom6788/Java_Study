@@ -1,0 +1,6 @@
+package test;
+
+public interface InterExample {
+	public void makeThis();
+	
+}

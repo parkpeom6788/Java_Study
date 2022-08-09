@@ -1,0 +1,8 @@
+package 두개매개변수;
+
+public class GenericMethod {
+	
+	public static <T,V> double makeRectangle() {
+		
+	}
+}

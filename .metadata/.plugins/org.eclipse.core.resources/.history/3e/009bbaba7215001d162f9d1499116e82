@@ -1,0 +1,8 @@
+package chapter7;
+
+public class Computer extends Product {
+	
+	Computer(int price,String name,int bonusPoint) {
+		super(price,name,bonusPoint);
+	}
+}

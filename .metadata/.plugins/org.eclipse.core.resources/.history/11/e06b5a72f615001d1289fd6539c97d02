@@ -1,0 +1,13 @@
+package sec02_exam;
+
+public class Marine extends Unit{
+
+	public Marine() {
+	}
+	@Override
+	public void move(int x, int y) {
+		System.out.println("마린의 위치 : " + x + "," + y +"로 이동함" );
+	}
+	
+	
+}

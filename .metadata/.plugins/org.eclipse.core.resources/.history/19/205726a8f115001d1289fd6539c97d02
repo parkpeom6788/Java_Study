@@ -1,0 +1,9 @@
+package sec06_exam;
+
+public class Default_staticExample {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}

@@ -1,0 +1,28 @@
+package generics;
+
+class Material2 {
+	
+}
+
+class 
+
+
+
+public class TreeDPrinter2<T> {
+		
+	private T material;
+
+	public T  getMaterial() {
+		return material;
+	}
+
+	public void setMaterial(T material) {
+		this.material = material;
+	}
+	
+	public static void main(String[] args) {
+		
+		
+	}
+}
+

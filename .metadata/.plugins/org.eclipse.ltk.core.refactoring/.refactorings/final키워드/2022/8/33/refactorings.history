@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;final키워드.Calculator.java&apos; to &apos;CalculatorDemo1.java&apos;&#x0D;&#x0A;- Original project: &apos;final키워드&apos;&#x0D;&#x0A;- Original element: &apos;final키워드.Calculator.java&apos;&#x0D;&#x0A;- Renamed element: &apos;final키워드.CalculatorDemo1.java&apos;" description="Rename compilation unit &apos;Calculator.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;final키워드{Calculator.java" name="CalculatorDemo1.java" references="false" stamp="1659909968586" version="1.0"/>
+</session>

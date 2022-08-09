@@ -1,0 +1,6 @@
+package eud.sample;
+
+public interface WashingMachine {
+	public void startButtonPressed();
+	
+}

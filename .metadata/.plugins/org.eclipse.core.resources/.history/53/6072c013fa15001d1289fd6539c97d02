@@ -1,0 +1,15 @@
+package 다형성_업캐스팅_다운캐스팅_instanceof연산자_형변환;
+
+public class CastingEx {
+	
+	public static void main(String[] args) {
+		
+		Car car = null;
+		FireEngine fe = new FireEngine();
+		FireEngine fe2 = null;
+		
+		f
+		
+		
+	}
+}

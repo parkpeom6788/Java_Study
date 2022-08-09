@@ -1,0 +1,6 @@
+package sec01_exam;
+
+public class letterSender implements ContentSender {
+	
+	
+}

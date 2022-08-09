@@ -1,0 +1,8 @@
+package 다형성_업캐스팅_다운캐스팅_instanceof연산자_형변환;
+
+// extends 
+public class FireEngine extends Car {
+	void water() {
+		System.out.println("water!!");
+	}
+}

@@ -1,0 +1,8 @@
+package sec01_exam;
+
+public class letterSender extends  ContentSender {
+	
+	String content;
+	
+	
+}

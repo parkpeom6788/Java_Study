@@ -1,0 +1,11 @@
+package scheduler;
+
+/* 왜 인터페이스를 사용하는가 ?
+ * 
+ * 
+ * 
+ */
+public interface Scheduler {
+	void getNextCall();
+	void sendCallToAgent(); // 상담원에게 콜 던짐
+}

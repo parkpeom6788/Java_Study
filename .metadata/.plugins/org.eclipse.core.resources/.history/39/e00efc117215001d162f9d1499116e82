@@ -1,0 +1,26 @@
+package chapter7;
+
+import java.util.Scanner;
+
+public class Shopping {
+	Scanner sc;
+	boolean flag;
+	public Shopping() {
+		sc = new Scanner(System.in);
+		choice();
+	}
+	
+	public void choice() {
+		System.out.println("1. 구매 2. 총 비용 3. 보유포인트");
+		int choice = sc.nextInt();
+		
+	while(flag) {
+		switch(choice) {
+		1: buy(); break;
+		2:totalPrice(); break;
+		3:totalBonus();
+		}
+		}
+	}
+	
+}

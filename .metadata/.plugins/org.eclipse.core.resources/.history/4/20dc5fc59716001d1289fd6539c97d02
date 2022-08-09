@@ -1,0 +1,14 @@
+package sec03_exam;
+
+public class KStudent  extends Student{
+
+	
+	
+	
+	@Override
+	public void printSchool() {
+		
+	}
+	
+	
+}

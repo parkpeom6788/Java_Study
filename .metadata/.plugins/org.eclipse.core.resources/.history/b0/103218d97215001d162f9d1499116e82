@@ -1,0 +1,8 @@
+package chapter7;
+
+public class Tv extends Product {
+	Tv(int price,String name,int bonusPoint) {
+		super(price,name,bonusPoint);
+		
+	}
+}

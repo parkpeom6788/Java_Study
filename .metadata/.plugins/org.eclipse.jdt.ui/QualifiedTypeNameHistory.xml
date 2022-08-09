@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="eud.sample.WashingMachine"/>
+    <fullyQualifiedTypeName name="eud.sample.LGWashingMachine"/>
+    <fullyQualifiedTypeName name="abstract_interface.ExamInterface.OpenCloseIf"/>
+    <fullyQualifiedTypeName name="abstract_interface.ExamInterface.PaintIf"/>
+    <fullyQualifiedTypeName name="abstract_interface.ExamInterface.Door"/>
+    <fullyQualifiedTypeName name="abstract_interface.Bottle"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="sec06_exam.MyInterface"/>
+    <fullyQualifiedTypeName name="sec06_exam.Myclass"/>
+    <fullyQualifiedTypeName name="sec01_exam.ContentSender"/>
+    <fullyQualifiedTypeName name="sec01_exam.letterSender"/>
+    <fullyQualifiedTypeName name="sec02_exam.DropShip"/>
+    <fullyQualifiedTypeName name="다형성_업캐스팅_다운캐스팅_instanceof연산자_형변환.Ambulance"/>
+    <fullyQualifiedTypeName name="sec07_exam.Singleton"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="test.ImpleInterface"/>
+    <fullyQualifiedTypeName name="final키워드.Calculator"/>
+</qualifiedTypeNameHistroy>

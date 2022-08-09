@@ -1,0 +1,16 @@
+package generics;
+
+public class TreeDPrinter2<T> {
+		
+	private T material;
+
+	public T  getMaterial() {
+		return material;
+	}
+
+	public void setMaterial(Object material) {
+		this.material = material;
+	}
+	
+	
+}

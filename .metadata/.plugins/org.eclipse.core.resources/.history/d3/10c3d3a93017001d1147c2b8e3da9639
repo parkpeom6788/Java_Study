@@ -1,0 +1,29 @@
+package generics;
+
+public class TreeDPrinterTest {
+
+	public static void main(String[] args) {
+			
+			TreeDPrinter<Powder>	printer = new TreeDPrinter<Powder>();
+			printer.setMaterial(new Powder());
+		
+//		Powder powder = (Powder)printer.getMaterial(); // Object -> Powder
+										// 다운캐스팅 해줘야함 
+		// 모든 참조형을 쓰고싶으면 Object로 쓰면 된다. 
+			Powder powder = printer.getMaterial(); 
+			System.out.println(printer);
+			
+			
+			TreeDPrinter<Plastic>	printerPlastic = new TreeDPrinter<Plastic>();
+			printerPlastic.setMaterial(new Plastic());
+		
+			Plastic powder2 = printerPlastic.getMaterial(); 
+			System.out.println(printer2);
+			
+			TreeDPrinter<Water>	printer3 = new TreeDPrinter<Water>();
+			printer3.setMaterial(new Water());
+		
+			Water powder3 = printer3.getMaterial(); 
+			System.out.println(printer3);
+	}
+}

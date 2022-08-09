@@ -1,0 +1,6 @@
+package sec06_exam;
+
+public interface MyInterface {
+	
+	//JDK 1.8부터 아래 2개의 
+}

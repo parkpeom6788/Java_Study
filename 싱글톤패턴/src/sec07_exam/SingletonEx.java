@@ -1,0 +1,38 @@
+package sec07_exam;
+
+import java.util.Calendar;
+
+public class SingletonEx {
+	public static void main(String[] args) {
+		
+		// Singleton 클래스의 기본생성자를 private 으로 설정했기 때문에
+		// 기본 생성자 호출이 안된다.
+//		Singleton s1 = new Singleton();
+		Singleton s1 = Singleton.getInstacne();
+		Singleton s2 = Singleton.getInstacne();
+		
+		Calendar calendar1 = Calendar.getInstance();
+		Calendar calendar2 = Calendar.getInstance();
+		
+		if(s1 == s2) {
+			System.out.println("같은 주소값을 가지는 싱글톤 패턴");
+			System.out.println("s1의 주소 : " + s1);
+			System.out.println("s2의 주소 : " + s2);
+		}
+		else {
+			System.out.println("다른 주소를 가지는 싱글톤 객체 입니다");
+			System.out.println("s1의 주소 : " + s1);
+			System.out.println("s2의 주소 : " +s2);
+		}
+		if(calendar1 == calendar2) {
+			System.out.println("같은 주소를 가지는 싱글톤 객체");
+			System.out.println("calendar1의 주소 : " + calendar1);
+			System.out.println("calendar2의 주소 : " + calendar2);
+		}
+		else {
+			System.out.println("다른 주소를 가지는 싱글톤 객체");
+			System.out.println("calendar1 의 주소 : " + calendar1);
+			System.out.println("calendar2 의 주소 : " + calendar2);
+		}
+	}
+}

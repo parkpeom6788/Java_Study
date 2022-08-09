@@ -1,0 +1,8 @@
+package bookshelf;
+
+public interface Queue {
+	
+	public void enQueue(String title);
+	
+	
+}

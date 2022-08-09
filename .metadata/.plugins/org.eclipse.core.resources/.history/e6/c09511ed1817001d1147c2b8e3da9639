@@ -1,0 +1,6 @@
+package scheduler;
+
+public interface Scheduler {
+	void getNextCall();
+	void sendCallToAgent(); // 상담원에게 콜 던짐
+}

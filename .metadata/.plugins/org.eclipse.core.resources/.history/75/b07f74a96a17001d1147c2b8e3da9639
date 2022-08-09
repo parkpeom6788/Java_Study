@@ -1,0 +1,5 @@
+package 싱글톤패턴2;
+
+public class SingleTonTest {
+	
+}

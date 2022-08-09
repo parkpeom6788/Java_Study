@@ -1,0 +1,10 @@
+package eud.sample;
+
+public class TestWashingMachine {
+	
+	public static void main(String[] args) {
+		
+		LGWashingMachine washinMachine = new LGWashingMachine();
+		
+	}
+}

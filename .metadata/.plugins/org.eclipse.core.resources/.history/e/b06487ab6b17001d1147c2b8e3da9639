@@ -1,0 +1,16 @@
+package 템플릿메서드;
+
+class Sinramun extends TemplateMethodTest {
+		
+	
+}
+
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

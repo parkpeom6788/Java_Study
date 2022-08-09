@@ -1,0 +1,19 @@
+package 템플릿메서드;
+
+public abstract class TemplateMethodTest {
+	
+	public void make() {
+		
+	}
+	protected void prepare() {
+		System.out.println("물을 올린다");
+	}
+	protected void fire() {
+		System.out.println("불을 킨다");
+	}
+	
+	protected abstract void soup();
+	
+	protected void 
+	
+}

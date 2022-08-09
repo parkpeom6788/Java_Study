@@ -1,0 +1,7 @@
+package chapter7;
+
+public class Tv {
+	Tv(int price,String name,int bonusPoint) {
+		super(price,name,bonusPoint)
+	}
+}

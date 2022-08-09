@@ -1,0 +1,10 @@
+package sec07_exam;
+
+public class SingletonEx {
+	public static void main(String[] args) {
+		
+		// Singleton 클래스의 기본생성자를 private 으로 설정했기 때문에
+		// 기본 생성자 호출이 안된다.
+		// 
+	}
+}

@@ -1,0 +1,8 @@
+package 다형성_업캐스팅_다운캐스팅_instanceof연산자_형변환;
+
+public class Ambulance extends Car {
+	// 사이렌 기능
+	void siren() {
+		System.out.println("삐 융 삐 융");
+	}
+}

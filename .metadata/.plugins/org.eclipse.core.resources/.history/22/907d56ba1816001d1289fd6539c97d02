@@ -1,0 +1,12 @@
+package sec02_exam;
+
+class InstanceOfEx2 {
+	
+}
+class Child extends InstanceOfEx2 {
+	
+}
+
+public class InstanceOfEx2 {
+	
+}

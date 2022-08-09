@@ -1,0 +1,12 @@
+package generics;
+
+public class TreeDPrinterPlastic {
+	
+	private Plastic material;
+	
+	public Plastic getMeterial() {
+		return meterial;
+	}
+	
+	
+}

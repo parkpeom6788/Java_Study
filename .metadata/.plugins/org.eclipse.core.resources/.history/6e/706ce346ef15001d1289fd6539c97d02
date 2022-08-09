@@ -1,0 +1,9 @@
+package sec06_exam;
+
+public class Myclass implements MyInterface {
+	
+	// MyInterface 인터페이스를 구현함
+	
+	
+	
+}

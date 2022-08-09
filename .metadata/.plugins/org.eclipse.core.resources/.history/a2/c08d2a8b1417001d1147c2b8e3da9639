@@ -1,0 +1,12 @@
+package interfaceex;
+
+public class CalculatorTest {
+	
+	public static void main(String[] args) {
+		
+		
+		Calc calc = new CompleteCalc(); // 인터페이스 = 구현클래스()
+		
+		
+	}
+}

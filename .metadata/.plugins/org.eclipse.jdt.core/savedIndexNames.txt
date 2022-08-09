@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+C:\Users\fight\Desktop\java\.metadata\.plugins\org.eclipse.jdt.core
+1227692403.index
+4289324054.index
+1865797976.index
+519329151.index
+3086649425.index
+168315620.index
+3674565598.index
+3182989350.index
+3182929720.index
+1046052861.index
+14092447.index

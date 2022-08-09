@@ -1,0 +1,10 @@
+package generics;
+
+public class TreeDPrinter2<Object> {
+		
+	private Object material;
+	
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package 다형성_업캐스팅_다운캐스팅_instanceof연산자_형변환;
+
+public class CastingEx {
+	
+	public static void main(String[] args) {
+		
+		Car car = null;
+		FireEngine fe = new FireEngine();
+		FireEngine fe2 = null;
+		
+		fe.water();
+		// 업캐스팅(자손->조상) 형변환 생략 가능 ,
+		// 다룰 수 있는 멤버 개수 줄어듬
+		
+		car = fe; // 필드의 다형성 (업캐스팅)
+		// car.water(); 예외 발생 car의 근본이 car 이기 때문에 
+		fe2 = (FireEngine)car; // 다운캐스팅 : 형변환 생략 불가능.
+											// 다룰 수 있는 멤버 개수 늘어남
+		fe2.water();
+	}
+}

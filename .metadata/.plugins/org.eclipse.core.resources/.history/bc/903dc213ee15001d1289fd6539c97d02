@@ -1,0 +1,12 @@
+package sec03_exam;
+
+public interface InterfaceEx {
+	
+	public static void main(String[] args) {
+		
+		// 클래스를 직접 생성해서 호출하는 것 
+		A a = new A();
+		a.methodA(new B());
+		
+	}
+}

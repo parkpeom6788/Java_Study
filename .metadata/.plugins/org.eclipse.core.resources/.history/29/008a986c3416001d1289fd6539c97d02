@@ -1,0 +1,9 @@
+package sec07_exam;
+
+public interface Animal {
+	public abstract void cry();
+}
+
+class Cat implements Animal {
+	
+}

@@ -1,0 +1,9 @@
+package eud.sample;
+
+public interface WashingMachine {
+	// 내부 
+	public void startButtonPressed();
+	public void pauseButtonPressed();
+	public void stopButtonPressed();
+	public int changeSpeed(int speed);
+}

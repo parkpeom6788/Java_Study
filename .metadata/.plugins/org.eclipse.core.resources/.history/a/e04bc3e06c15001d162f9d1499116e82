@@ -1,0 +1,37 @@
+package chapter7;
+
+public class Example1_Buyer {
+	
+	public static void main(String[] args) {
+		class Product {
+			String name = "";
+			int price;
+			int bonusPoint;
+			public Product(String name, int price, int bonusPoint) {
+				super();
+				this.name = name;
+				this.price = price;
+				this.bonusPoint = bonusPoint;
+			}		
+		}
+		class Tv extends Product {
+			Tv() {
+				this("jmTV",500,50);
+			}
+			public Tv(String name, int price, int bonusPoint) {
+				super(name, price, bonusPoint);
+			}
+		}
+		
+		class Computer extends Product {
+			Computer() {
+				this("SmCom",600,66);
+			}
+			Computer(String name,int price,int bonusPoint) {
+				super(name,price,bonusPoint);
+			}
+		}
+		
+		
+	}
+}

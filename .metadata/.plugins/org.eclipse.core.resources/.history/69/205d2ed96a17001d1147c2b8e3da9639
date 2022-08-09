@@ -1,0 +1,13 @@
+package 싱글톤패턴2;
+
+public class SingleTonTest {
+	
+	private SingleTonTest singleton = new SingleTonTest();
+	
+	private SingleTonTest() {
+	}
+	
+	public SingleTonTest getInstacne() {
+		return singleton;
+	}
+}

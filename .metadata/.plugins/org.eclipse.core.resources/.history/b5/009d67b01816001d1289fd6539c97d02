@@ -1,0 +1,8 @@
+package sec02_exam;
+
+class Parent {
+	
+}
+class Child extends Parent {
+	
+}
