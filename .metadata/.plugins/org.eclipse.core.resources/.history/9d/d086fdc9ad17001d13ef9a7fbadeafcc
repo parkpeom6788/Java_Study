@@ -1,0 +1,70 @@
+
+컬렉션 프레임 워크
+프로그램 구현에 필요한 자료구조(Data Structure)를 구현해 놓은 라이브러리
+java.util 패키지에 구현되어 있음
+개발에 소요되는 시간을 절약하면서 최적화 된 알고리즘을 사용할 수 있음
+여러 인터페이스와 구현 클래스 사용 방법을 이해해야 함
+ 
+ Collection - List - (ArrayList) , Vector , Linked List 
+ 				 - (Set)  HashSet ,TreeSet
+ 				- Map HashTable (HashMap) TreeMap
+ 컬렉션 프레임워크의 전체 실습 예제 소스는 책 참고 			
+ 
+ Collection 은 단일객체를 관리 
+ Map은 쌍으로 된 객체를 관리	key,value
+ 
+ Collection 인터페이스
+ 하나의 객체를 관리하기 위한 메서드가 정의된 인터페이스
+ 하위에 List 와 Set 인터페이스가 있음
+ 여러 클래스들이 Collection 인터페이스를 구현함
+ List 인터페이스 - 순서가 있는 자료관리 중복허용 ArrayList Vector LinkedList stack queue
+ set 인터페이스 - 순서가 정해져 있지 않음  중복허용안함 HashSet , TreeSet 
+ 
+ ArrayList 와 Vector 
+ 객체 배열을 구현한 클래스
+ Vector 는 자바2 부터 제공된 클래스
+ 멀티쓰레드 상태에서 리소스에 대한 동기화가 필요한 경우 Vector 를 사용
+ 일반적으로 ArrayList를 더 많이 사용함
+ ArrayList에 동기화 기능이 추가 되어야 하는 경우
+ Collections.synchornizedList(new ArrayList<String>());
+ 
+ 동기화(synchronization) : 두 개의 쓰레드가 동시에 하나의 리소스에 접근 할 때
+ 순서를 맞추어서 데이터에 오류가 발생하지 않도록 함 
+ 
+ 하나의 프로세스는 하나의 스레드를 가지게 됨
+ 스케줄러가 스레드가 cpu를 제어하게 해줌
+ 
+ 다른 스레드가 static 영역을 접근하게 되면 동시에 접근시 문제가 됨
+ 임계영역... critice section... 
+ 
+ 수행중에 중간에 수행해버리는 문제 
+ lock 동기화 - 하나의 방법이다
+ 
+ Vector 는 동기화 synchronized 를 해줌 리소스를 사용하기전에 락 사용할때 락걸고 
+ 단일스레드일때 락을 걸면.. 오버헤드..
+ 멀티스레드 일때 동기화 하는게 낫다..
+ 
+ 동기화 : 두 개의 쓰레드가 하나의 리소스에 접근 할때 순서를 맞추어서 데이터에 오류가 발생하지 않도록 함
+ 
+ Iterator 사용하여 순회하기
+ Collection 의 개체를 순회하는 인터페이스
+ iterator() 메서드 호출
+ Iterator it = memberArrayList.iterator();
+ 선언된 메서드
+ boolean hashNext() 이후에 요소가 더있는지를 체크하는 메서드이며 요소가 있다면 true반환
+ E next() 다음에 있는 요소를 반환 
+ 
+ Set 인터페이스
+ Collection 하위의 인터페이스
+ 중복을 허용하지 않음
+ 아이디 , 주민번호 , 사번 등 유일한 값이나 객체를 관리할 때 사용
+ List는 순서기반의 인터페이스지만 Set은 순서가 없음
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

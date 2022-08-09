@@ -1,0 +1,15 @@
+package collection.hashmap;
+
+import java.util.HashMap;
+
+import collection.Member;
+
+public class MemberHashMap {
+	
+	private HashMap<Integer, Member> hashMap;
+	
+	public MemberHashMap() {
+		hashMap = 
+	}
+	
+}	

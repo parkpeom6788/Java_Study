@@ -1,0 +1,12 @@
+package collection.hashset;
+
+public class MemberHashSetTest {
+
+	public static void main(String[] args) {
+		MemberHashSet memberHashSet = new MemberHashSet();
+		
+		Member 
+		
+		memberHashSet.addMember(null);
+	}
+}

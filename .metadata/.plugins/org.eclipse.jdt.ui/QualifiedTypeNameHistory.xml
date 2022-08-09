@@ -17,4 +17,27 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="test.ImpleInterface"/>
     <fullyQualifiedTypeName name="final키워드.Calculator"/>
+    <fullyQualifiedTypeName name="interfaceex.Calculator"/>
+    <fullyQualifiedTypeName name="scheduler.Scheduler"/>
+    <fullyQualifiedTypeName name="scheduler.RoundRobin"/>
+    <fullyQualifiedTypeName name="scheduler.LeastJob"/>
+    <fullyQualifiedTypeName name="scheduler.PriorityAllocation"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="bookshelf.Shelf"/>
+    <fullyQualifiedTypeName name="generics.TreeDPrinter2"/>
+    <fullyQualifiedTypeName name="싱글톤패턴2.SingleTonTest"/>
+    <fullyQualifiedTypeName name="템플릿메서드.TemplateMethodTest"/>
+    <fullyQualifiedTypeName name="템플릿메서드.Sinramun"/>
+    <fullyQualifiedTypeName name="두개매개변수.GenericMethod"/>
+    <fullyQualifiedTypeName name="collection.arraylist.MemberArrayList"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="collection.hashset.MemberHashSet"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="collection.treeset.TreeSetTest"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="collection.Member"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>

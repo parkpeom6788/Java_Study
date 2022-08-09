@@ -1,0 +1,26 @@
+package collection.hashset;
+import collection.Member;
+public class MemberHashSetTest {
+	public static void main(String[] args) {
+		MemberHashSet memberHashSet = new MemberHashSet();
+		
+		Member memberLee = new Member(101,"이순신");
+		Member memberKim = new Member(102,"김유신");
+		Member memberShin = new Member(103,"신사임당");
+		
+		memberHashSet.addMember(memberLee);
+		memberHashSet.addMember(memberKim);
+		memberHashSet.addMember(memberShin);
+		
+		memberHashSet.showAll();
+		
+		Member memberLee2 = new Member(101,"이몽룡");
+		memberHashSet.addMember(memberLee2);
+		memberHashSet.showAll();
+		
+		// 아이디가 같으면ㅇ ㅏㄴ됨... 
+		// HashSet<String> 은 중복이 안되는데 
+		// 왜 HashSet<Member>는 중복이 될까?
+		// String에는 equals 에서 체크해주고 있기 때문이다.
+	}
+}

@@ -1,0 +1,55 @@
+package collection;
+
+// TreeSet 정렬하기위해 Comparable 구현
+public class Member implements Comparable<T> {	
+	
+	private int memberId;
+	private String memberName;
+	
+	public Member() {
+		// TODO Auto-generated constructor stub
+	}
+	public Member(int memberId, String memberName) {
+		super();
+		this.memberId = memberId;
+		this.memberName = memberName;
+	}
+	public int getMemberId() {
+		return memberId;
+	}
+	public void setMemberId(int memberId) {
+		this.memberId = memberId;
+	}
+	public String getMemberName() {
+		return memberName;
+	}
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return memberName + "회원님의 아이디는 " + memberId +"입니다.";
+	}
+	// hashSet에서 기존멤버와 새로들어가는 멤버와 같은지 비교해줘야함..
+	// 아이디가 같으면 같다 
+	@Override
+	public int hashCode() {
+		return memberId;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Member) {
+			Member member = (Member)obj; // object -> member 다운캐스팅 
+			if(this.memberId == member.memberId) {
+				return true;
+			}
+			else return false;
+		}
+		return false; // member가 아니면 
+	}
+	
+	// 어떻게 비교해서 넣을지 
+	
+}
