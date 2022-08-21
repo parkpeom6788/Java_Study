@@ -1,0 +1,50 @@
+보조스트림 이란?
+다른스트림과 연결되어 여러 가지 편리한 기능을 제공해주는 스트림
+보조스트림 = 필터스트림 이라고 함
+
+보조스트림의 일부가 FilterInputStream , FilterOutputStream의 하위 클래스
+다른 보조 스트림은 이클래스들을 상속받지 않기 때문에 필터스트림이란 용어 대신
+사용목적에 맞게 보조스트림 이라고 부른다
+보조스트림은 자체적으로 입출력을 수행할 수 없기 때문에
+입력 소스와 바로 연결되는 InputStream , FileInputStream , Reader , FileReader 
+ 출력 소스와 바로 연결되는 OutputStream, FileOutputStream , Writer , FileWriter 등에 연결해서 입출력 수행
+ 보조스트림은 문자변환,입출력 성능 향상 , 기본데이터 타입 입출력 , 객체 입출력 등의 기능 제공
+ 
+ 문자 변환 보조 스트림
+ InputStreamReader(System.in)
+ OutputStreamWriter
+ 
+ 성능 향상 보조 스트림
+ 보조 역할을 하는 버퍼를 제공해주는 보조 스트림 입니다
+ 소스로부터 직접 읽고 쓰는 대신에 버퍼로 부터 읽고 쓰게 되면서 성능이 향상
+ BufferedInputStream(new InputStreamReader(System.in))
+ BufferedReader
+ BufferedOutputStream
+ BufferedWriter
+ 
+ 기본 타입 입출력 보조 스트림
+ 바이트 스트림은 바이트 단위로 입출력 하기 때문에 자바의 기본 데이터 타입으로 입출력 할 수 없지만
+ DataInputStream , DataOutputStream 보조 스트림을 연결하면 기본 데이터 타입으로 입출력 가능
+DataInputStream
+DataOutputStream
+
+프린터 보조 스트림
+PrintStream
+PrintWriter
+
+객체 입출력 보조 스트림
+바이트 출력 스트림과 연결되어 객체를 직렬화 하는데 ObjectOutputStream 이 사용되어 역직렬화하는데
+ObjectInputStream 이 사용됨
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

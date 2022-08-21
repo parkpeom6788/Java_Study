@@ -1,0 +1,103 @@
+
+스트림(Stream) 기반의 IO
+
+자바의 입력과 출력
+
+자바에서는 데이터를 외부에서 읽고 다시 외부로 출력하는 작업(입출력)에 스트림(Stream)을 사용함
+스트림은 단일방향으로 연속적으로 흘러가는 것을 말하며 데이터는 출발지에서 나와 도착지로 들어간다는 개념이다
+스트리밍의 특성이 단방향 이므로 하나의 스트림으로 입력과 출력을 모두 할수 없음
+프로그램이 네트워크상의 다른 프로그램과 데이터 교환을 하기 위해서는 양쪽 모두 입력 스트림과 출력스트림이 필요
+입출력 작업의 예 : 키보드 , 파일 , 네트워크에서 입력과 모니터 , 파일 , 네트워크로 출력
+
+프로그램이 출발지냐 또는 도착지냐에 따라서 스트림의 종류가 결정
+프로그램이 데이터를 입력 받을 때는 입력 스트림 (InputStream)
+프로그램이 데이터를 보낼 때는 출력 스트림(OutputStream)
+
+File : 파일 시스템의 파일 정보를 얻기 위한 클래스
+Console : 콘솔로부터 문자를 입출력 하기 위한 클래스
+InputStream/OutputStream 바이트 단위 입출력을 위한 최상위 입출력 스트림 클래스
+
+- 바이트 단위 입출력을 위한 하위 스트림 클래스 
+FileInputStream/FileOutputStream 
+DataInputStream/DataOutputStream
+PrintStream
+BufferedInputStream/BufferedOutputStream
+
+- 문자 단위 입출력을 위한 최상위 입출력 스트림 클래스
+Reader/Writer
+
+- 문자 단위 입출력을 위한 하위 스트림 클래스
+FileReader/FileWriter
+InputStreamReader/OutputStreamWriter
+PrintWriter
+BufferedReader/BufferedWriter
+
+Byte 와 Character 스트림
+스트림클래스 크게 두 종류 , 바이트(byte) 기반 스트림과 문자(character) 기반 스트림으로 구분
+바이트 기반 스트림 : 그림,멀티미디어,문자 등 모든 종류의 데이터를 주고 받을 수 있음
+문자 기반 스트림 : 오직 문자만 주고 받도록 특화
+
+바이트 기반 스트림과 문자 기반 스트림은 최상위 클래스에 따라 다음과 같이 구분
+
+Byte 스트림(InputStream 과 OutputStream)
+
+InputStream
+바이트 기반 입력 스트림의 최상위 클래스로 추상 클래스
+모든 바이트 기반 입력 스트림은 이 클래스를 상속
+ex) FileInputStream,BufferedInputStream,DataInputStream 클래스
+
+read - abstract int 스트림 데이터 1바이트씩 읽어온다 반환값은 0~255의 아스키코드 값이기때문에 문자로 나타내려면 char로 캐스팅 해야 한다 더이상 읽을수 없을때는 -1를 반환
+
+int read(byte b[]) 스트림 데이터 1바이트를 읽어 바이트 배열 b의 start위치에 저장하고 읽을 수 만큼 반환
+available() 읽을수 있는 바이트 수를 반환한다
+long skip(long n) 읽을 수 있는 바이트에서 n만큼 건너뛴다
+void close() 입력스트림을 닫는다
+
+read()
+- 입력 스트림으로부터 1바이트를 읽고 4바이트 int 타입으로 리턴
+리턴된 4바이트 중 끝의 1바이트에만 데이터가 들어있음
+예를 들어 입력 스트림에는 5개의 바이트가 들어오면  read() 메서드로 1바이트씩 5번 읽을 수 있다
+
+더이상 입력 스트림으로부터 바이트를 읽을 수 없다면 -1을 리턴
+이것을 이용해서 읽을 수 있는 마지막 바이트까지 루프를 돌며 한 바이트씩 읽을 수 있음
+
+InputStream is = new FileInputStream("");
+int readByte;
+
+while((readByte=is.read()) != -1) {
+}
+read(byte[] b) 
+입력 스트림으로부터 매개값으로 주어진 바이트 배열의 길이만큼 바이트를 읽고 배열에 저장
+실제로 읽은 바이트 수가 배열의 길이보다 작을 경우 읽은 수만큼 리턴
+스크림에서 5개의 바이트가 들어오면, 크기가 3인 바이트 계열(Byte[3]) 로 두번만에 읽을 수 있음
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

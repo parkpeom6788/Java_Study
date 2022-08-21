@@ -1,0 +1,77 @@
+
+객체 직렬화 와 역직렬화
+Java 직렬화와 역직렬화에 대해서 알아본다
+
+직렬화(Serialization) 란?
+객체를 직렬화 하여 전송 가능한 형태로 만드는 것을 의미
+객체들이 데이터를 연속적인 데이터로 변형하여 Stream 을 통해 데이터를 읽도록 함
+
+객체들을 통째로 파일로 저장하거나 전송하고 싶을 때 주로 사용됨
+역직렬화 (Deserialization) 
+직렬화된 파일 등을 역으로 직렬화 하여 다시 객체의 형태로 만드는 것을 의미
+저장된 파일을 읽거나 전송된 스트림을 데이터를 읽어 원래 객체의 형태로 복원함
+
+직렬화 가능한 클래스
+바로 직렬화가 가능한 클래스를 먼저 만드는 것이다
+
+Serializable 을 통해 정할수 있다
+
+직렬화를 위한 전제조건이 있다. 바로 직렬화가 가능한 클래스를 먼저 만드는 것이다
+이는 Serializable 을 통해 정 할수 있다
+
+public class A {
+	...
+}
+public class A implements Serializable {
+	
+}
+직렬화가 가능한 클래스 A 에 Serializable 인터페이스를 implements 
+Serializable 인터페이스를 구현하는 클래스로 만든다
+
+Serializable 없는 경우
+보통의 경우는 직렬화가 불가능 . 하지만 클래스들간의 관계를 고려해보면
+가능한 경우도 있다
+Serializable을 implement 한 클래스를 상속받은 경우이다
+
+				A implements Serializable 
+	
+				Class B extends A 
+				
+	이러한 경우 클래스 B는 직렬화 가능한 클래스가 된다.
+	
+3. transient를 이용하여 직렬화 대상에서 제외
+클래스의 멤버변수 전부 직렬화 대상에 해당 하지만 보안상의 문제나 기타 이유로
+멤버 변수의 일부를 제외하고 싶다면 transient를 통해 지정할 수 있다
+User 클래스가 있다고 한다.				
+public class User implements Serializable {
+	private String id;
+	private transient String password;
+	private String email;
+}
+
+4. 다른 객체를 멤버변수로 가지고 있는 경우
+int , long , String 등 기본 자료형 뿐만 아니라 다른 객체를 멤버변수로 사용하는 경우가
+굉장히 많다. 
+
+User 클래스에 타 객체 변수를 추가함
+				
+				
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

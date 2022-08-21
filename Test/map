@@ -1,0 +1,36 @@
+Map 컬렉션에는 HashMap , Hashtable , LinkedHashMap, Properties, TreeMap
+
+객체 추가 V put(K key,V value) 주어진 키와 값을 추가 저장시 값 리턴  0
+boolean containsValue(Object value) 주어진 값이 있는지 여부
+Set<Map.Entry<K,V> entrySet() 키와 값이 쌍으로 구성된 모든 Map.Entry 객체를 Set에 담아서 리턴
+V get(Object key) 주어진 키의 값을 리턴
+Boolean isEmpty() 컬렉션이 비어있는지 여부
+Set<K> keySet() 모든 키를 Set 객체에 담아서 리턴
+int size() 저장된 키의 총 수를 리턴
+Collection<V> values() 저장된 모든 값을 Collection 에 담아서 리턴
+void clear() 모든 Mp.Entry(키와 값)를 삭제
+V remove(Object key) 주어진 키와 일치하는 Map.Entry를 삭제하고 값을 리턴
+
+객체 추가는 put() 메서드 사용 , 키로 객체를 찾아올때에는 get() 메서드 사용
+
+Map<String,Integer> map = ...;
+
+map.put("Jackie",30);
+int score = map.get("Jackie"); // 키를 통해서 값을 찾아옴
+map.remove("Jackie");
+저장된 전체 객체를 대상으로 하나씩 얻고 싶을 경우 두가지 방법 사용
+
+keySet() 메서드 
+
+
+
+
+
+
+
+
+
+
+
+
+
